@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>home </title>
+  
+  
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- owl carousel style -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add this to the head section of your HTML -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<link rel="stylesheet" href="style1.css">
+
+<link rel="stylesheet" href="style.css">
+  <style>  .book-container {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .book-image {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-height: 180px; /* Decreased height */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .book-container:hover .book-image {
+    transform: translateY(-10px);
+  }
+
+  .buy-now-button {
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Full width */
+    background-color: #fffffff4;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px; /* Adjusted padding */
+    border-radius: 0; /* No border radius */
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .book-container:hover .buy-now-button {
+    display: block;
+  }
+  </style>
+    
+</head>
+
+<body class=""
+  
+
+<!-- Add this to your HTML structure --><!-- Add this to your HTML structure -->
+<!-- <div class="container"> -->
+    <!-- Your website content goes here -->
+</div>
+
+
+<nav>
+  <ul>
+    <li class="logo">havel books</li>
+    <li class="btn"><span class="fas fa-bars"></span></li>
+    <div class="items">
+      <li><a class=" font-semibold " href="#">Home</a></li>
+      <li><a class="font-semibold" href="#">About</a></li>
+      <li><a class="font-semibold" href="#">Services</a></li>
+      <li class="dropdown">
+        <a class="font-semibold" href="#">Contact<span class="fas fa-chevron-down"></span></a>
+        <div class="dropdown-content">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+
+        </div>
+    </li>
+      <li><a class="font-semibold" href="#">Cart</a></li>
+    </div>
+    <li class="search-icon">
+      <input type="search" placeholder="Search">
+      <label class="icon">
+        <span class="fas fa-search"></span>
+      </label>
+    </li>
+  </ul>
+</nav>
+
+<script>
+  // JavaScript code to handle the click event and show the services section
+  document.getElementById("serviceButton").addEventListener("click", function() {
+      // Hide other pages if needed
+      document.getElementById("homePage").style.display = "none";
+
+      // Show the services section
+      document.querySelector(".services_section").style.display = "block";
+  });
+</script>
+<script>
+  $('nav ul li.btn span').click(function(){
+    $('nav ul div.items').toggleClass("show");
+    $('nav ul li.btn span').toggleClass("show");
+  });
+</script>
+
+<section class="bg-yellow text-black py-32 bg-cover" style="background-image: url('https://i.gifer.com/origin/b2/b2d58b3e45046f3181acae28be70632e_w200.webp'); background-position: center center;">
+  <div class="container mx-auto text-center">
+      <h1 class="font-extrabold mb-4 animate-bounce fa-phone inline-block px-5 py-1 bg-green-200 text-black"> "book lovers" </h1>
+      <div></div>
+      <h1 class="font-extrabold mb-4 animate-bounce fa-map-marker inline-block px-11 py-1 bg-green-200 text-black"> "your online book source" </h1>
+      <p class="text-lg mb-6 animate-fade-in font-bold text-white">Explore a diverse collection of <span class="text-blue-500 font-extrabold">books for every reader</span>.</p>
+      <p class="text-sm mb-4 animate-fade-in font-bold text-white">From bestsellers to hidden gems, find the perfect book to captivate your imagination.</p>
+      <div class="flex justify-center space-x-4 mt-4"> <!-- Decreased top margin -->
+          <div class="book-container" onclick="makeDraggable(this)">
+              <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61-hMfd7NGL._SY522_.jpg" alt="Book 1" class="book-image">
+              <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+          </div>
+          <div class="book-container" onclick="makeDraggable(this)">
+              <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51-nXsSRfZL._SY445_SX342_.jpg" alt="Book 2" class="book-image">
+              <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+          </div>
+          <div class="book-container" onclick="makeDraggable(this)">
+              <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51KkT9Z1kGL._SY445_SX342_.jpg" alt="Book 3" class="book-image">
+              <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+          </div>
+      </div>
+      <p class="text-white text-opacity-75 mt-4">Browse our extensive collection and find the perfect book for your next reading adventure.</p>
+      <a href="#" class="bg-blue-500 hover:bg-blue-400 text-white font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105 animate-wiggle mt-2">Start Exploring</a>
+  </div>
+</section>
+
+
+<script>
+  function makeDraggable(element) {
+    let isDragging = false;
+    let offsetX, offsetY;
+
+    element.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      offsetX = e.clientX - element.getBoundingClientRect().left;
+      offsetY = e.clientY - element.getBoundingClientRect().top;
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (isDragging) {
+        element.style.position = 'absolute';
+        element.style.left = e.clientX - offsetX + 'px';
+        element.style.top = e.clientY - offsetY + 'px';
+      }
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+  }
+
+  function buyNow() {
+    // Implement your "Buy Now" functionality here
+    alert('Buy Now clicked!');
+  } 
+  </script>
+
+
+ 
+
+
+
+
+
+
+
+
+ <div class="services_section layout_padding ">
+  <div class="container">
+     <h1 class="services_taital"><span style="color: #fcce2d">special </span> categoriess </h1>
+     <div class="services_section_2">
+        <div class="row">
+           <div class="col-md-6">
+              <div class="image_main">
+                 <img src="https://assets.hongkiat.com/uploads/design-books-sketching-typography/freehand.jpg" class="image_8" style="width:100%">
+                 <div class="text_main">
+                    <div class="seemore_text">Art And Design</div>
+                 </div>
+              </div>
+           </div>
+           <div class="col-md-6">
+              <div class="image_main">
+                 <img src="https://images.pexels.com/photos/16516/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" class="image_8" style="width:100%">
+                 <div class="text_main">
+                    <div class="seemore_text">comic</div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="row">
+           <div class="col-md-6">
+              <div class="image_main">
+                 <img src="https://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/Business%20Fundamentals.jpg&w=1200&h=630" class="image_8" style="width:100%">
+                 <div class="text_main">
+                    <div class="seemore_text">Business and professinol books</div>
+                 </div>
+              </div>
+           </div>
+           <div class="col-md-6">
+              <div class="image_main">
+                 <img src="https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="image_8" style="width:100%">
+                 <div class="text_main">
+                    <div class="seemore_text">selp-help books</div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>            
+</div>
+
+
+
+
+<!-- Product with Sale (You can add more product elements here) -->
+
+<div class="body" id="color" style="background-image: url('');">
+  
+ 
+<h1 class="services_taital "><span style="color: aquamarine"> </span> </h1>
+<center><h2 class="font-semibold mb-2 animate-bounce fa-map-marker inline-block  text-black ">🎄 Merry Christmas ! 🎁</h2></center>
+<h4 class="font-extrabold"><center>___________________________________________________________________________________________</center></h4>
+  
+  <h3><span class="text-black bg-blue-500 font-bold"><center>"Wishing you a joyous and Merry Christmas from all of us at havel books! 🎅🎉"</center></span></p></h3>
+  <div class="slider" >
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+    <div class="box3">
+    </div>
+    <div class="box4">
+    </div>
+    <div class="box5">
+    </div>
+    <div class="box6">
+    </div>
+    <div class="box7">
+    </div>
+  </div>
+
+<div id="test"></div>
+<script> function rotate() {
+  var lastChild = $('.slider div:last-child').clone();
+  /*$('#test').html(lastChild)*/
+  $('.slider div').removeClass('firstSlide')
+  $('.slider div:last-child').remove();
+  $('.slider').prepend(lastChild)
+  $(lastChild).addClass('firstSlide')
+}
+
+window.setInterval(function(){
+  rotate()
+}, 4000);
+</script>
+  
+
+
+
+
+<!-- <div class="bg-white " style="background-image: url('')"> -->
+  
+<div class="d-flex align-center flex-centerY-centerX">
+    <!-- Item 1 -->
+    <div class="el-wrapper">
+      <div class="box-up">
+        <img class="img" src="https://rukminim2.flixcart.com/image/612/612/xif0q/book/r/i/h/-original-imagqtdt8jyfh82t.jpeg?q=70" alt="">
+        <div class="img-info">
+          <div class="info-inner">
+            <span class="p-name font-extrabold">Everything Is F*cked: A Book About Hope </span>
+            <span class="p-company">Part of: The Subtle Art of Not Giving a F*ck (2 books)</span>
+          </div>
+          <div class="a-size">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad doloremque earum, laudantium hic obcaecati maxime. <span class="size"></span></div>
+        </div>
+      </div>
+
+      <div class="box-down">
+        <div class="h-bg">
+          <div class="h-bg-inner"></div>
+        </div>
+        <a class="cart" href="#">
+          <span class="price">$120</span>
+          <span class="add-to-cart">
+            <span class="txt">Add in cart</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+   
+      <!-- ... (Repeat structure for Item 2) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/kiqbma80-0/book/u/g/u/vidhyarthiyon-ke-liye-gita-original-imafygpyhemyctcy.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+     
+    </div>
+    
+
+    <!-- Item 3 -->
+   
+      <!-- ... (Repeat structure for Item 3) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/kd0k7m80/book/3/5/7/psycho-cybernetics-updated-and-expanded-original-imafuy2p6mequ7x4.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+      
+
+        
+       
+      
+      
+    </div>
+  </div>
+
+  <div class="d-flex align-center flex-centerY-centerX">
+    <!-- Item 1 -->
+    <div class="el-wrapper">
+      <div class="box-up">
+        <img class="img" src="https://rukminim2.flixcart.com/image/612/612/kufuikw0/book/x/c/c/the-communication-book-original-imag7jukafyveqb4.jpeg?q=70" alt="">
+        <div class="img-info">
+          <div class="info-inner">
+            <span class="p-name font-extrabold">I feel like Pablo</span>
+            <span class="p-company">Yeezy</span>
+          </div>
+          <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+        </div>
+      </div>
+
+      <div class="box-down">
+        <div class="h-bg">
+          <div class="h-bg-inner"></div>
+        </div>
+        <a class="cart" href="#">
+          <span class="price">$120</span>
+          <span class="add-to-cart">
+            <span class="txt">Add in cart</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+   
+      <!-- ... (Repeat structure for Item 2) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/kppt47k0/book/e/o/i/master-your-emotions-original-imag3weyaszhjymh.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+     
+      </div>
+
+    <!-- Item 3 -->
+   
+      <!-- ... (Repeat structure for Item 3) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/kkh6zrk0/book/q/k/q/influence-original-imafztmfhck9u3uu.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+      
+
+        
+       
+      
+      
+    </div>
+  </div>
+  <div class="d-flex align-center flex-centerY-centerX">
+    <!-- Item 1 -->
+    <div class="el-wrapper">
+      <div class="box-up">
+        <img class="img" src="https://rukminim2.flixcart.com/image/612/612/l0tweq80/book/p/z/l/wisdom-from-rich-dad-poor-dad-original-imagcgn2ysmszxjy.jpeg?q=70" alt="">
+        <div class="img-info">
+          <div class="info-inner">
+            <span class="p-name font-extrabold">I feel like Pablo</span>
+            <span class="p-company">Yeezy</span>
+          </div>
+          <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+        </div>
+      </div>
+
+      <div class="box-down">
+        <div class="h-bg">
+          <div class="h-bg-inner"></div>
+        </div>
+        <a class="cart" href="#">
+          <span class="price">$120</span>
+          <span class="add-to-cart">
+            <span class="txt">Add in cart</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+   
+      <!-- ... (Repeat structure for Item 2) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/k6jnfrk0/book/7/5/6/surrounded-by-psychopaths-original-imafzzhwgqurxfef.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+     
+    </div>
+    
+
+    
+   
+      <!-- ... (Repeat structure for Item 3) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/kufuikw0/book/n/k/j/manifest-original-imag7jrufuxvxfrn.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+      
+
+        
+       
+      
+      
+    </div>
+  </div>
+
+  <div class="d-flex align-center flex-centerY-centerX">
+    <!-- Item 1 -->
+    <div class="el-wrapper">
+      <div class="box-up">
+        <img class="img" src="https://rukminim2.flixcart.com/image/612/612/kwcfngw0/book/y/p/e/think-straight-original-imag9f4wv7msdfrz.jpeg?q=70" alt="">
+        <div class="img-info">
+          <div class="info-inner">
+            <span class="p-name font-extrabold">I feel like Pablo</span>
+            <span class="p-company">Yeezy</span>
+          </div>
+          <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+        </div>
+      </div>
+
+      <div class="box-down">
+        <div class="h-bg">
+          <div class="h-bg-inner"></div>
+        </div>
+        <a class="cart" href="#">
+          <span class="price">$120</span>
+          <span class="add-to-cart">
+            <span class="txt">Add in cart</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+   
+      <!-- ... (Repeat structure for Item 2) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/l3vxbbk0/book/n/i/o/just-keep-buying-original-imagexy3kdjzgqsn.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+     
+    </div>
+    
+
+    <!-- Item 3 -->
+   
+      <!-- ... (Repeat structure for Item 3) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/kuef2q80/book/q/f/y/rework-original-imag7jeqhffmuazq.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+      
+
+        
+       
+      
+      
+    </div>
+  </div>
+  <div class="d-flex align-center flex-centerY-centerX">
+    <!-- Item 1 -->
+    <div class="el-wrapper">
+      <div class="box-up">
+        <img class="img" src="https://rukminim2.flixcart.com/image/612/612/kufuikw0/book/i/v/w/thinking-fast-and-slow-original-imag7jkh2mfxrhgj.jpeg?q=70" alt="">
+        <div class="img-info">
+          <div class="info-inner">
+            <span class="p-name font-extrabold">I feel like Pablo</span>
+            <span class="p-company">Yeezy</span>
+          </div>
+          <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+        </div>
+      </div>
+
+      <div class="box-down">
+        <div class="h-bg">
+          <div class="h-bg-inner"></div>
+        </div>
+        <a class="cart" href="#">
+          <span class="price">$120</span>
+          <span class="add-to-cart">
+            <span class="txt">Add in cart</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+   
+      <!-- ... (Repeat structure for Item 2) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/xif0q/book/s/d/d/the-laws-of-human-nature-original-imagksqrgeqh2qa2.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+     
+    </div>
+    
+
+    <!-- Item 3 -->
+   
+      <!-- ... (Repeat structure for Item 3) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/832/832/koad9jk0/book/a/j/t/power-of-ignored-skills-original-imag2scrxsy84xax.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+      
+
+        
+       
+      
+      
+    </div>
+  </div>
+  <div class="d-flex align-center flex-centerY-centerX">
+    <!-- Item 1 -->
+    <div class="el-wrapper">
+      <div class="box-up">
+        <img class="img" src="https://rukminim2.flixcart.com/image/832/832/xif0q/book/j/y/u/-original-imagqtduhcgjv78g.jpeg?q=70" alt="">
+        <div class="img-info">
+          <div class="info-inner">
+            <span class="p-name font-extrabold">I feel like Pablo</span>
+            <span class="p-company">Yeezy</span>
+          </div>
+          <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+        </div>
+      </div>
+
+      <div class="box-down">
+        <div class="h-bg">
+          <div class="h-bg-inner"></div>
+        </div>
+        <a class="cart" href="#">
+          <span class="price">$120</span>
+          <span class="add-to-cart">
+            <span class="txt">Add in cart</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+   
+      <!-- ... (Repeat structure for Item 2) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/l3vxbbk0/book/c/d/h/the-48-laws-of-power-original-imagewfsbgef4ghr.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+     
+    </div>
+    
+
+    <!-- Item 3 -->
+   
+      <!-- ... (Repeat structure for Item 3) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/l1xwqkw0/book/4/l/e/the-power-of-habit-original-imagddzgtaj6a5uh.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+      
+
+        
+       
+      
+      
+    </div>
+  </div>
+  <div class="d-flex align-center flex-centerY-centerX">
+    <!-- Item 1 -->
+    <div class="el-wrapper">
+      <div class="box-up">
+        <img class="img" src="https://rukminim2.flixcart.com/image/612/612/l1xwqkw0/book/4/l/e/the-power-of-habit-original-imagddzgtaj6a5uh.jpeg?q=70" alt="">
+        <div class="img-info">
+          <div class="info-inner">
+            <span class="p-name font-extrabold">I feel like Pablo</span>
+            <span class="p-company">Yeezy</span>
+          </div>
+          <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+        </div>
+      </div>
+
+      <div class="box-down">
+        <div class="h-bg">
+          <div class="h-bg-inner"></div>
+        </div>
+        <a class="cart" href="#">
+          <span class="price">$120</span>
+          <span class="add-to-cart">
+            <span class="txt">Add in cart</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+   
+      <!-- ... (Repeat structure for Item 2) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/612/612/kwcfngw0/book/y/p/e/think-straight-original-imag9f4wv7msdfrz.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+     
+    </div>
+    
+
+    <!-- Item 3 -->
+   
+      <!-- ... (Repeat structure for Item 3) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/832/832/k7usyvk0/book/5/3/1/think-like-a-monk-original-imafpzyfmgzcat95.jpeg?q=70" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+      
+
+        
+       
+      
+      
+    </div>
+  </div>
+  <div class="d-flex align-center flex-centerY-centerX">
+    <!-- Item 1 -->
+    <div class="el-wrapper">
+      <div class="box-up">
+        <img class="img" src="https://rukminim2.flixcart.com/image/832/832/xif0q/book/w/b/f/ikigai-original-imaggkyuzdwwghrq.jpeg?q=70" alt="">
+        <div class="img-info">
+          <div class="info-inner">
+            <span class="p-name font-extrabold">I feel like Pablo</span>
+            <span class="p-company">Yeezy</span>
+          </div>
+          <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+        </div>
+      </div>
+
+      <div class="box-down">
+        <div class="h-bg">
+          <div class="h-bg-inner"></div>
+        </div>
+        <a class="cart" href="#">
+          <span class="price">$120</span>
+          <span class="add-to-cart">
+            <span class="txt">Add in cart</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+   
+      <!-- ... (Repeat structure for Item 2) ... -->
+      <div class="el-wrapper">
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/850/1000/xif0q/regionalbooks/q/q/s/the-psychology-of-money-book-morgan-housel-original-imaggf94kr24p3mk.jpeg?q=90" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+     
+    </div>
+    
+
+    <!-- Item 3 -->
+   
+      <!-- ... (Repeat structure for Item 3) ... -->
+      <div class="el-wrapper" >
+        <div class="box-up">
+          <img class="img" src="https://rukminim2.flixcart.com/image/850/1000/l111lzk0/book/s/f/w/mindset-changing-the-way-you-think-to-fulfil-your-potential-original-imagczd8hn3ay5nw.jpeg?q=90" alt="">
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name font-extrabold">I feel like Pablo</span>
+              <span class="p-company">Yeezy</span>
+            </div>
+            <div class="a-size">Available sizes: <span class="size">S, M, L, XL</span></div>
+          </div>
+        </div>
+      
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$120</span>
+            <span class="add-to-cart">
+              <span class="txt">Add in cart</span>
+            </span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+
+
+                                                    
+
+<!-- More E-commerce Elements -->
+<!-- add more products, categories, and elements here -->
+
+<!-- Product with Sale (You can add more product elements here) -->
+
+
+
+
+
+
+<!-- More E-commerce Elements -->
+<!--  add more products, categories, and elements here -->
+
+
+<!-- More E-commerce Elements -->
+<!-- add more products, categories, and elements here -->
+<!-- More E-commerce Elements -->
+<!-- add more products, categories, and elements here -->
+
+<!-- Product with Sale (You can add more product elements here) -->
+
+
+
+
+
+
+
+    <!-- Add more product tiles here -->
+
+    <!-- Next Page Button -->
+    <div class="col-span-3 flex justify-end mt-4" id="color">
+        <button class="bg-blue-500 hover:bg-red-700 text-white px-4 py-2 rounded-full focus:outline-none focus:shadow-outline">
+            Next Page
+        </button>
+    </div>
+
+
+
+<!-- More E-commerce Elements -->
+<!-- add more products, categories, and elements here -->
+
+<!-- Featured Products Section -->
+<section>
+
+<center><hr class="">
+ 
+
+
+<div class="big-text font-extrabold mb-4 animate-bounce fa-phone inline-block px-5 py-1 bg-blue-400">
+  <h1>customer testimonials</h1>
+</div>
+
+</center>
+
+
+<div class="outerdiv">
+  <div class="innerdiv">
+    <!-- div1 -->
+    <div class="eachdiv">
+      <div class="userdetails">
+        <div class="imgbox">
+          <img src="" alt="">
+        </div>
+        <div class="detbox">
+          <p class="name">walter white</p>
+          <p class="designation">businessman</p>
+        </div>
+      </div>
+      <div class="stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="review">
+        <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</h4>
+        <p>“ Lorem ipsum dolor sit amet consectetur, adipisicing elit. ”</p>
+      </div>
+    </div>
+
+    <!-- div2 -->
+    <div class="eachdiv">
+      <div class="userdetails">
+        <div class="imgbox">
+          <img src="" alt="">
+        </div>
+        <div class="detbox">
+          <p class="name">homelander</p>
+          <p class="designation">skillful</p>
+        </div>
+      </div>
+      <div class="stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="review">
+        <h4>Lorem, ipsum dolor sit amet Doloremque?</h4>
+        <p>“ Lorem ipsum dolor sit amet consectetur adipisicing elit. ”</p>
+      </div>
+    </div>
+
+    <!-- div3 -->
+    <div class="eachdiv">
+      <div class="userdetails">
+        <div class="imgbox">
+          <img src="" alt="">
+        </div>
+        <div class="detbox">
+          <p class="name dark">Kira Whittle</p>
+          <p class="designation dark">Verified Graduate</p>
+        </div>
+      </div>
+      <div class="stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="review dark">
+        <h4>Lorem ipsum dolor sit amet consectetur ?</h4>
+        <p>“ Lorem ipsum dolor sit amet consectetur adipisicing elit. ”</p>
+      </div>
+    </div>
+
+    <!-- div4 -->
+    <div class="eachdiv">
+      <div class="userdetails">
+        <div class="imgbox">
+          <img src="" alt="">
+        </div>
+        <div class="detbox">
+          <p class="name dark">david</p>
+          <p class="designation dark">Verified Graduate</p>
+        </div>
+      </div>
+      <div class="stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="review dark">
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veniam.</h4>
+        <p>“ Lorem ipsum dolor sit amet consectetur?. ”</p>
+      </div>
+    </div>
+
+    <!-- div5 -->
+    <div class="eachdiv">
+      <div class="userdetails">
+        <div class="imgbox">
+          <img src="" alt="">
+        </div>
+        <div class="detbox">
+          <p class="name">carlos</p>
+          <p class="designation">Verified Graduate</p>
+        </div>
+      </div>
+      <div class="stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="review">
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</h4>
+        <p>“ Lorem, ipsum dolor sit amet consectetur adipisicing elit. ”</p>
+      </div>
+    </div>
+
+    <!-- div6 -->
+    <div class="eachdiv">
+      <div class="userdetails">
+        <div class="imgbox">
+          <img src="" alt="">
+        </div>
+        <div class="detbox">
+          <p class="name">john doe</p>
+          <p class="designation">developer</p>
+        </div>
+      </div>
+      <div class="stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="review">
+        <h4>Lorem ipsum dolor sit amet t?</h4>
+        <p>“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eius distinctio.  ”</p>
+      </div>
+    </div>
+  </section>
+    <!-- Add more divs as needed -->
+
+  </div>
+</div>
+
+<div class="attribution">
+  Coded by <a href="https://www.instagram.com/@t__ankit1/" target="_blank">ankit thakur</a>.
+</div>
+    <!-- Add a horizontal line (divider) -->
+    
+
+<!-- Customer Review Column with Black Background --> 
+     
+    <!-- Add a "Review" button -->
+    
+        
+       
+    
+<!-- Featured Products Section -->
+
+<!-- Featured Categories Section -->
+
+
+
+
+
+
+<!-- More E-commerce Elements -->
+
+ 
+<!-- Footer Section -->
+<div>
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="text-3xl font-bold mb-8 text-white">Contact Us</div>
+                    <h4 class="footer-heading">havel E-Commerce</h4>
+                    <div class="footer-underline"></div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <div class="footer-underline"></div>
+                    <div class="mb-2"><a href="" class="text-white">Home</a></div>
+                    <div class="mb-2"><a href="" class="text-white">About Us</a></div>
+                    <div class="mb-2"><a href="" class="text-white">Contact Us</a></div>
+                    <div class="mb-2"><a href="" class="text-white">Blogs</a></div>
+                    <div class="mb-2"><a href="" class="text-white">Sitemaps</a></div>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="footer-heading">Shop Now</h4>
+                    <div class="footer-underline"></div>
+                    <div class="mb-2"><a href="" class="text-white">Collections</a></div>
+                    <div class="mb-2"><a href="" class="text-white">Trending Products</a></div>
+                    <div class="mb-2"><a href="" class="text-white">New Arrivals Products</a></div>
+                    <div class="mb-2"><a href="" class="text-white">Featured Products</a></div>
+                    <div class="mb-2"><a href="" class="text-white">Cart</a></div>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="footer-heading">Reach Us</h4>
+                    <div class="footer-underline"></div>
+                    <div class="mb-2">
+                        <p>
+                            <i class="fa fa-map-marker"></i> #444, some main road, some area, some street, bangalore, india - 560077
+                        </p>
+                    </div>
+                    <div class="mb-2">
+                        <a href="" class="text-white">
+                            <i class="fa fa-phone"></i> +91 7011783191 
+                        </a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="" class="text-white">
+                            <i class="fa fa-envelope"></i> thakurankit13197@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class=""> &copy; 2023 - havel books - Ecommerce. All rights reserved.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-media">
+                        Get Connected:
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="slider-setting.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script1.js"></script>
+
+
+</body>
+</html>
