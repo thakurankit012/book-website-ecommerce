@@ -22,7 +22,7 @@ HavelBook was built using a combination of modern web technologies:
 
 ## Demo
 
-Check out the live demo of HavelBook [here](https://www.havelbook-demo.com) to experience the website firsthand!
+Check out the live demo of HavelBook [here](https://bookecommercewebsite.tiiny.site/) to experience the website firsthand!
 
 ## Contributing
 
